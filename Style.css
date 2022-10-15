@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* Colors */
+    --color-Pink: hsl(322, 100%, 66%);
+    --color-Light_Pink: hsl(321, 100%, 78%);
+    --color-Light_Red: hsl(0, 100%, 63%);
+    --color-Very_Dark_Cyan: hsl(192, 100%, 9%);
+    --color-Very_Pale_Blue: #e2effc;
+
+    /* Fonts */
+    --open_sans: 'Open Sans', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+
+    /*properties*/
+    --padding-general: 4rem;
+}
