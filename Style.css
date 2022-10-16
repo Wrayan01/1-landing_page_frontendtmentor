@@ -20,11 +20,6 @@
 
     /*properties*/
     --padding-container: 60px 0 45px;
-
-    /* Waves */
-    --wave-bottom: url(./images/bg-section-top-mobile-1.svg);
-    --wave-top: url(./images/bg-section-bottom-mobile-1.svg);
-
 }
 
 body{
@@ -46,6 +41,7 @@ p{
 .hero{
     min-height: 100vh;
     position: relative; /* para posicionar wave*/
+    --wave-bottom: url(./images/bg-section-top-mobile-1.svg);
 }
 
 .hero_nav{
@@ -83,11 +79,11 @@ p{
 }
 
 
-.hero_tittle{
+.hero_title{
     font-family: var(--poppins);
 }
 
-.hero_pharagraph{
+.hero_paragraph{
     margin: 16px auto;
     line-height: 1.5;
     width: 90%;
@@ -157,8 +153,46 @@ p{
 }
 
 .wave--top{
-left: 0;
-top: 0;
-background-image: var(--wave-top);
-background-repeat: none;
+    left: 0;
+    top: 0;
+    background-image: var(--wave-top);
+    background-repeat: none;
 }
+
+/* Main Section*/
+
+.section{
+    background-color: var(--color-Very_Pale_Blue);
+    --padding-container: 110px 0;   /* Se cambia variable para este caso */
+}
+
+.section--white{
+    background-color: white;
+    position: relative; /* Para agregar wave*/
+    --padding-container: 150px 0;
+    --wave-top: url(./images/bg-section-bottom-mobile-1.svg);
+    --wave-bottom: url(./images/bg-section-top-mobile-2.svg);
+}
+
+.section_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.section_img{
+    display: block; /* Elimina margen por defecto de imagenes*/
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.section_texts{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.subtitle{
+    margin-bottom: 16px;
+    font-family: var(--poppins);
+}
+
