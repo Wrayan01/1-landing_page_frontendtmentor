@@ -97,6 +97,7 @@ p{
     padding: 16px 30px;
     border-radius: 30px;
     margin-top: 16px;
+    font-weight: 600;
 }
 
 .hero_picture{
@@ -156,7 +157,6 @@ p{
     left: 0;
     top: 0;
     background-image: var(--wave-top);
-    background-repeat: none;
 }
 
 /* Main Section*/
@@ -194,5 +194,17 @@ p{
 .subtitle{
     margin-bottom: 16px;
     font-family: var(--poppins);
+}
+
+.question{
+    text-align: center;
+    position: relative;
+    --wave-top: url(./images/bg-section-bottom-mobile-2.svg);
+    --wave-bottom: url(./images/bg-footer-top-mobile.svg);
+    --padding-container: 190px 0 210px;
+}
+
+.question .wave--bottom{
+    height: 50px;
 }
 
