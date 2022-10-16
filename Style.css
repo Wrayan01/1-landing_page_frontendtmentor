@@ -40,7 +40,7 @@ p{
 
 .hero{
     min-height: 100vh;
-    /* position: relative;  */
+    position: relative; /* para posicionar wave*/
 }
 
 .hero_nav{
@@ -68,4 +68,82 @@ p{
     padding: 6px 16px;
     font-weight: 600;
     box-shadow: 0 0 1px;
+}
+
+/* Hero-Main */
+
+.hero_main{
+    text-align: center; /* Todos los elementos de hero_main estan centrados */
+    color: var(--color-Very_Dark_Cyan);
+}
+
+
+.hero_tittle{
+    font-family: var(--poppins);
+}
+
+.hero_pharagraph{
+    margin: 16px auto;
+    line-height: 1.5;
+    width: 90%;
+}
+
+.cta { 
+    display: inline-block;
+    background-color: var(--color-Pink);
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 30px;
+    border-radius: 30px;
+    margin-top: 16px;
+}
+
+.hero_picture{
+    margin-top: 80px;
+}
+
+.hero_mockup{
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: o auto;
+}
+
+.hero_estadistics{
+    border: 1px solid;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    gap: 60px;
+}
+
+.hero_item{
+    overflow: hidden;
+    margin-bottom: 30px;
+    border: 1px solid red;    
+}
+
+.hero_number{
+    font-size: 60px ;
+    border: 1px solid;
+}
+
+.hero_icon{
+    display: block;
+    border: 1px solid green;
+}
+
+.wave{
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 100px;
+}
+
+.wave--bottom{
+    left: 0;
+    bottom: 0;
+    background-image: url(./images/bg-section-bottom-mobile-1.svg);
 }
