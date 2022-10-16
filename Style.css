@@ -20,6 +20,11 @@
 
     /*properties*/
     --padding-container: 60px 0 45px;
+
+    /* Waves */
+    --wave-bottom: url(./images/bg-section-top-mobile-1.svg);
+    --wave-top: url(./images/bg-section-bottom-mobile-1.svg);
+
 }
 
 body{
@@ -135,15 +140,25 @@ p{
     border: 1px solid green;
 }
 
+/* waves */
+
 .wave{
     position: absolute;
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
     height: 100px;
+    background-repeat: no-repeat;
 }
 
 .wave--bottom{
     left: 0;
     bottom: 0;
-    background-image: url(./images/bg-section-bottom-mobile-1.svg);
+    background-image: var(--wave-bottom);
+}
+
+.wave--top{
+left: 0;
+top: 0;
+background-image: var(--wave-top);
+background-repeat: none;
 }
