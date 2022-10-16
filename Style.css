@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 :root{
     /* Colors */
     --color-Pink: hsl(322, 100%, 66%);
@@ -18,5 +19,53 @@
     --poppins: 'Poppins', sans-serif;
 
     /*properties*/
-    --padding-general: 4rem;
+    --padding-container: 60px 0 45px;
+}
+
+body{
+    font-family: var(--open_sans);
+}
+
+p{
+    font-family: var(--poppins);
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px; /* el 90% ocupado no superará los 1200px */
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero{
+    min-height: 100vh;
+    /* position: relative;  */
+}
+
+.hero_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.hero_logo{
+    width: 45%;
+    max-width: 10rem; 
+    border: 1px solid red;
+}
+
+.hero_img{
+    display: block; /* Se elimina el margen que traen todas las imagenes por defecto */
+    width: 100%;
+}
+
+.hero_cta{
+    color: var(--color-Light_Pink);
+    border: 2px solid;  /*no se especifica color al borde puesto que por defecto toma el current color que este caso es light pink)*/
+    border-radius: 30px;
+    padding: 6px 16px;
+    font-weight: 600;
+    box-shadow: 0 0 1px;
 }
