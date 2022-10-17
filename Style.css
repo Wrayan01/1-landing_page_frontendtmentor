@@ -208,3 +208,85 @@ p{
     height: 50px;
 }
 
+/* Footer */
+
+.footer{
+    background-color: var(--color-Very_Dark_Cyan);
+    color: white;
+}
+
+.footer_title{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    font-family: var(--poppins);
+}
+
+.footer_logo--white{
+    filter: invert(100%); 
+}
+
+.footer_paragraph {
+    line-height: 1.5;
+    margin: 16px 0 50px;
+}
+
+.footer_form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.footer_input{
+    flex-basis: 100;
+    flex-grow: 1;
+    font-size: 16px;
+    font-family:var(--open_sans) ;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 16px 6px;
+    margin-bottom: 20px;
+}
+
+.footer_cta{
+    font-size: 16px;
+    font-family:var(--open_sans) ;
+    display: inline-block;
+    background-color: var(--color-Pink);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-left: auto;
+}
+
+.footer_contact{
+    line-height: 30px;
+}
+
+.footer_contact::after{
+    content: "Phone: +1-543-123-4567";
+}
+
+.footer_contact--email::after{
+    content: "example@huddle.com";
+}
+
+.footer_social{
+display: flex;
+justify-content: center;
+gap: 16px;
+margin-top: 30px;
+}
+
+.footer_link{
+    text-decoration: none;
+    width: 40px;
+}
+
+.footer_icon{
+    width: 100%;
+    display: block;
+}
